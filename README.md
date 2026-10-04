@@ -1,13 +1,7 @@
 # Student Task Manager
 
-## Run the app
+## Use the app
 
-Install Node.js, open a terminal in this folder, and run:
+Open `index.html` in a web browser. No server, runtime, or package installation is required. Tasks are stored in this browser using `localStorage` and will remain available on later visits from the same browser.
 
-```sh
-node backend.js
-```
-
-Then open <http://127.0.0.1:3000>. Tasks are saved in `data/tasks.json`, created automatically when the first task is added. Set the `PORT` environment variable to use a different port.
-
-The server uses only Node.js built-in modules. Its API supports listing tasks (`GET /api/tasks`), adding tasks (`POST /api/tasks`), marking a task active or complete (`PATCH /api/tasks/:id`), and deleting tasks (`DELETE /api/tasks/:id`).
+The app supports adding, searching, filtering, completing, and deleting tasks. Browser storage is specific to the browser and device where the app is opened; it is not shared across devices.
