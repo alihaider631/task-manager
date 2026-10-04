@@ -1,0 +1,187 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff;
+    color: #29243b;
+    line-height: 1.6;
+}
+
+/* Main container */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(60, 40, 100, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #6941c6;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #49327e;
+    font-size: 21px;
+    margin-top: 25px;
+    border-bottom: 2px solid #eee8ff;
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin: 0 0 8px;
+    color: #392b60;
+    font-size: 18px;
+}
+
+/* Form sections */
+section {
+    margin-bottom: 30px;
+}
+
+form p,
+section > p {
+    margin-bottom: 16px;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #49327e;
+}
+
+/* Input fields, dropdowns and text area */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d8d0e9;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #29243b;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #805ad5;
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.15);
+}
+
+/* Buttons */
+button {
+    padding: 10px 17px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7552c7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5d3aa9;
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid #b69af5;
+    outline-offset: 3px;
+}
+
+/* Task list */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#task-list li {
+    margin-bottom: 14px;
+    padding: 18px;
+    border: 1px solid #e7e0f4;
+    border-left: 5px solid #8965d3;
+    border-radius: 10px;
+    background-color: #faf9ff;
+    overflow-wrap: anywhere;
+}
+
+#task-list li p {
+    margin: 8px 0 12px;
+    color: #625b70;
+}
+
+/* Task buttons */
+#task-list button {
+    margin: 5px 5px 0 0;
+}
+
+#task-list button:last-child {
+    background-color: #e85d75;
+}
+
+#task-list button:last-child:hover {
+    background-color: #c83e59;
+}
+
+/* Task count and messages */
+#task-count {
+    font-weight: bold;
+    color: #6941c6;
+}
+
+#empty-message,
+#no-results-message {
+    text-align: center;
+    padding: 15px;
+    color: #777087;
+    background-color: #f8f6fd;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    #task-list li {
+        padding: 14px;
+    }
+}
